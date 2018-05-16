@@ -1,0 +1,4 @@
+cx_Oracle
+flask
+flask_sqlalchemy
+uwsgi
