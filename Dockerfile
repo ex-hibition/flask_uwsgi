@@ -39,7 +39,7 @@ RUN pip3.6 install -r /usr/local/app/routeapi/requirements.txt
 RUN yum install -y nginx
 
 # 設定ファイルをコンテナにコピー
-ADD uwsgi.conf /etc/nginx/conf.d/
+ADD nginx.conf /etc/nginx/
 ADD routeapi.ini /usr/local/app/routeapi/
 ADD supervisord.conf /etc/supervisord.d/
 RUN mkdir -p /var/log/uwsgi/
